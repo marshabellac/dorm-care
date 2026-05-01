@@ -1,0 +1,1040 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dorm Care</title>
+    <meta
+      name="description"
+      content="Dorm Care adalah sistem basis data untuk membantu staf asrama mengelola kebersihan, pemeliharaan fasilitas, penjadwalan pembersihan, pelaporan keluhan, dan monitoring kondisi kamar guna meningkatkan efisiensi operasional dan kualitas layanan."
+    />
+    <meta name="author" content="Angelina, Cindi, Marshabella, Nicole, Oliver" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon_io/favicon-16x16.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img
+              src="assets/images/dorm care logo (green).png"
+              alt="Logo"
+              width="50"
+              height="auto"
+              class="nav-logo me-2"
+            />
+            Dorm Care
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+              <a class="nav-link" href="#fitur">Fitur</a>
+              <a class="nav-link" href="#klien">Klien</a>
+              <a class="nav-link" href="#artikel">Artikel</a>
+              <a class="nav-link" href="#jadwalkan-demo">Demo</a>
+              <a class="nav-link" href="#faq">FAQ</a>
+            </div>
+          </div>
+          <div class="d-flex">
+            <a
+              href="https://www.figma.com/proto/L8MtuflNPIhnAtvdR14f58/Dashboard-Dorm-Care?node-id=235-4&t=qq16O7JofNtKucTZ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2505"
+              target="_blank"
+            >
+              <button class="btn px-4 rounded-pill fw-semibold" type="submit">Coba Gratis</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div id="dormCareCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#dormCareCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#dormCareCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#dormCareCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container d-flex align-items-center min-vh-100">
+              <div class="row w-100 align-items-center">
+                <div class="col-lg-6" style="padding-left: 100px">
+                  <h1 class="display-3 fw-bold mb-4">Solusi Cerdas, <br />Asrama Berkelas.</h1>
+                  <p class="lead mb-4">
+                    Sederhanakan manajemen kebersihan dan pemeliharaan fasilitas dalam satu sistem
+                    terintegrasi.
+                  </p>
+                  <div class="d-flex gap-3">
+                    <a href="#jadwalkan-demo" class="text-decoration-none">
+                      <button
+                        type="button"
+                        class="btn btn-primary px-4 py-2 fw-semibold rounded-pill"
+                      >
+                        Jadwalkan Demo
+                      </button>
+                    </a>
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary px-4 py-2 fw-semibold rounded-pill"
+                    >
+                      <a
+                        href="https://wa.me/08111198759"
+                        target="_blank"
+                        class="text-decoration-none"
+                        ><i class="ri-whatsapp-line me-1"></i> Hubungi Tim
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <img
+                    src="assets/images/carousel/carousel-1.png"
+                    class="img-fluid"
+                    alt="Dorm Care Hero"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container d-flex align-items-center min-vh-100">
+              <div class="row w-100 align-items-center">
+                <div class="col-lg-6" style="padding-left: 100px">
+                  <h1 class="display-3 fw-bold text-dark mb-4">
+                    Jadwal Teratur, Kebersihan Terukur.
+                  </h1>
+                  <p class="lead mb-4">
+                    Pantau kinerja staf, atur jadwal dengan mudah, dan pastikan kenyamanan mahasiswa
+                    tetap nomor satu.
+                  </p>
+                  <div class="d-flex gap-3">
+                    <a href="#jadwalkan-demo" class="text-decoration-none">
+                      <button
+                        type="button"
+                        class="btn btn-primary px-4 py-2 fw-semibold rounded-pill"
+                      >
+                        Jadwalkan Demo
+                      </button>
+                    </a>
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary px-4 py-2 fw-semibold rounded-pill"
+                    >
+                      <a
+                        href="https://wa.me/08111198759"
+                        target="_blank"
+                        class="text-decoration-none"
+                        ><i class="ri-whatsapp-line me-1"></i> Hubungi Tim
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <img
+                    src="assets/images/carousel/carousel-2.png"
+                    class="img-fluid"
+                    alt="Dorm Care Hero"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container d-flex align-items-center min-vh-100">
+              <div class="row w-100 align-items-center">
+                <div class="col-lg-6" style="padding-left: 100px">
+                  <h1 class="display-3 fw-bold text-dark mb-4">
+                    Keluhan Terdata, Penanganan Terlacak.
+                  </h1>
+                  <p class="lead mb-4">
+                    Dari kerusakan kecil hingga perbaikan rutin, semua laporan tercatat rapi dan
+                    terpantau tuntas.
+                  </p>
+                  <div class="d-flex gap-3">
+                    <a href="#jadwalkan-demo" class="text-decoration-none">
+                      <button
+                        type="button"
+                        class="btn btn-primary px-4 py-2 fw-semibold rounded-pill"
+                      >
+                        Jadwalkan Demo
+                      </button>
+                    </a>
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-primary px-4 py-2 fw-semibold rounded-pill"
+                    >
+                      <a
+                        href="https://wa.me/08111198759"
+                        target="_blank"
+                        class="text-decoration-none"
+                        ><i class="ri-whatsapp-line me-1"></i> Hubungi Tim
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <img
+                    src="assets/images/carousel/carousel-3.png"
+                    class="img-fluid"
+                    alt="Dorm Care Hero"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#dormCareCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#dormCareCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <section id="slogan">
+      <div class="slogan-banner">
+        <h1 id="typing" class="slogan-heading"></h1>
+      </div>
+    </section>
+    <section id="fitur" class="py-5">
+      <div class="fitur-text">
+        <h2 class="text-center sub-head">FITUR KAMI</h2>
+        <h1 class="text-center heading">Manajemen Asrama yang Terintegrasi dan Terpercaya</h1>
+        <p class="text-center">
+          Mulai dari pemantauan kebersihan hingga pemeliharaan fasilitas, kami merancang sistem ini
+          untuk membuat manajemen asrama jadi terorganisir, transparan, dan efisien. Setiap laporan
+          dikelola dengan ketelitian dan tanggung jawab maksimal.
+        </p>
+      </div>
+      <div class="features-section">
+        <div class="container">
+          <div class="row justify-content-center g-4 mb-5">
+            <div class="col-6 col-md-3">
+              <div class="feature-card">
+                <div class="feature-circle">
+                  <img
+                    src="assets/images/fitur/fitur-penghuni.png"
+                    alt="Manajemen Data Penghuni Asrama"
+                    class="feature-image"
+                  />
+                </div>
+                <h3 class="feature-title">Manajemen Data<br />Penghuni Asrama</h3>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="feature-card">
+                <div class="feature-circle">
+                  <img
+                    src="assets/images/fitur/fitur-petugas-admin.png"
+                    alt="Manajemen Data Petugas dan Admin"
+                    class="feature-image"
+                  />
+                </div>
+                <h3 class="feature-title">Manajemen Data<br />Petugas dan Admin</h3>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="feature-card">
+                <div class="feature-circle">
+                  <img
+                    src="assets/images/fitur/fitur-kamar.png"
+                    alt="Manajemen Data Kamar Asrama"
+                    class="feature-image"
+                  />
+                </div>
+                <h3 class="feature-title">Manajemen Data<br />Kamar Asrama</h3>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="feature-card">
+                <div class="feature-circle">
+                  <img
+                    src="assets/images/fitur/fitur-fasilitas.png"
+                    alt="Pemeriksaan Fasilitas Kamar"
+                    class="feature-image"
+                  />
+                </div>
+                <h3 class="feature-title">Pemeriksaan<br />Fasilitas Kamar</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center g-4">
+            <div class="col-6 col-md-2-4 custom-five-col">
+              <div class="feature-card">
+                <div class="feature-circle">
+                  <img
+                    src="assets/images/fitur/fitur-penempatan.png"
+                    alt="Manajemen Penempatan Kamar"
+                    class="feature-image"
+                  />
+                </div>
+                <h3 class="feature-title">Manajemen<br />Penempatan<br />Kamar</h3>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-2-4 custom-five-col">
+              <div class="feature-card">
+                <div class="feature-circle">
+                  <img
+                    src="assets/images/fitur/fitur-jadwal.png"
+                    alt="Penjadwalan Pembersihan Kamar"
+                    class="feature-image"
+                  />
+                </div>
+                <h3 class="feature-title">Penjadwalan<br />Pembersihan<br />Kamar</h3>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-2-4 custom-five-col">
+              <div class="feature-card">
+                <div class="feature-circle">
+                  <img
+                    src="assets/images/fitur/fitur-monitoring.png"
+                    alt="Monitoring Aktivitas Pembersihan"
+                    class="feature-image"
+                  />
+                </div>
+                <h3 class="feature-title">Monitoring<br />Aktivitas<br />Pembersihan</h3>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-2-4 custom-five-col">
+              <div class="feature-card">
+                <div class="feature-circle">
+                  <img
+                    src="assets/images/fitur/fitur-keluhan.png"
+                    alt="Pengelolaan Keluhan Kamar"
+                    class="feature-image"
+                  />
+                </div>
+                <h3 class="feature-title">Pengelolaan<br />Keluhan Kamar</h3>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-2-4 custom-five-col">
+              <div class="feature-card">
+                <div class="feature-circle">
+                  <img
+                    src="assets/images/fitur/fitur-pemeliharaan.png"
+                    alt="Manajemen Pemeliharaan Perbaikan"
+                    class="feature-image"
+                  />
+                </div>
+                <h3 class="feature-title">Manajemen<br />Pemeliharaan/<br />Perbaikan</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="klien" class="container">
+      <h2 class="text-center sub-head">MENGAPA MEMILIH DORM CARE?</h2>
+      <h1 class="text-center heading">Manajemen Asrama Lebih Mudah, Terukur, & Terpercaya</h1>
+      <img src="assets/images/map.png" class="w-75 mx-auto d-block map" />
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="assets/images/clients/unpad logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/itb logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/uph logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/ui logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/umn logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/ugm logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/pu logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/unair logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/ub logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/unpad logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/itb logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/uph logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/ui logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/umn logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/ugm logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/pu logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/unair logo.png" height="50" width="auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/clients/ub logo.png" height="50" width="auto" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row text-center pt-5">
+        <div class="col-md-4 mb-4">
+          <h2 class="counter" data-target="8" data-suffix="+">0</h2>
+          <p>Kampus Terkemuka di Pulau Jawa</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h2 class="counter" data-target="50" data-prefix="+" data-suffix="%">0</h2>
+          <p>Percepatan Respon Maintenance</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h2 class="counter" data-target="5000" data-suffix="+">0</h2>
+          <p>Mahasiswa Terlayani</p>
+        </div>
+      </div>
+    </section>
+    <section id="artikel" class="py-5">
+      <h1 class="heading text-center mb-5">Artikel</h1>
+
+      <div class="container px-md-5">
+        <div class="swiper newsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card h-100 border-0">
+                <div class="image-wrapper rounded-3">
+                  <img
+                    src="assets/images/article/article-1.png"
+                    class="card-img-top"
+                    alt="article-1"
+                  />
+                </div>
+                <div class="card-body px-0">
+                  <small class="text-uppercase fw-bold article-small">BERITA</small>
+                  <h5 class="card-title mt-2">Behind the Scenes: <br />Tim di Balik Dorm Care</h5>
+                  <p class="card-text text-muted">
+                    Di balik tampilan Dorm Care yang sederhana namun fungsional, terdapat kerja sama
+                    dari lima...
+                  </p>
+                  <a
+                    href="behind-the-scenes-tim-di-balik-dorm-care.html"
+                    class="text-decoration-none fw-bold text-primary read-more-link"
+                    >Baca Selengkapnya <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100 border-0">
+                <div class="image-wrapper rounded-3">
+                  <img
+                    src="assets/images/article/article-2.jpg"
+                    class="card-img-top"
+                    alt="article-2"
+                  />
+                </div>
+                <div class="card-body px-0">
+                  <small class="text-uppercase fw-bold article-small">WAWASAN</small>
+                  <h5 class="card-title mt-2">
+                    Kenapa Kamar Bersih Itu Pengaruh Banget buat Mood?
+                  </h5>
+                  <p class="card-text text-muted">
+                    Pernah merasa lebih lega, lebih tenang, atau bahkan lebih semangat setelah kamar
+                    dirapikan...
+                  </p>
+                  <a
+                    href="kenapa-kamar-bersih-itu-pengaruh-banget-buat-mood.html"
+                    class="text-decoration-none fw-bold text-primary read-more-link"
+                    >Baca Selengkapnya <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100 border-0">
+                <div class="image-wrapper rounded-3">
+                  <img
+                    src="assets/images/article/article-3.jpg"
+                    class="card-img-top"
+                    alt="article-3"
+                  />
+                </div>
+                <div class="card-body px-0">
+                  <small class="text-uppercase fw-bold article-small">WAWASAN</small>
+                  <h5 class="card-title mt-2">
+                    Capek Ngurusin Asrama yang Ribet? <br />
+                    Ini Solusinya
+                  </h5>
+                  <p class="card-text text-muted">
+                    Mengelola asrama memang bukan hal yang mudah. Sekilas, tugasnya terlihat
+                    sederhana: ...
+                  </p>
+                  <a
+                    href="capek-ngurusin-asrama-yang-ribet-ini-solusinya.html"
+                    class="text-decoration-none fw-bold text-primary read-more-link"
+                    >Baca Selengkapnya <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100 border-0">
+                <div class="image-wrapper rounded-3">
+                  <img
+                    src="assets/images/article/article-4.jpg"
+                    class="card-img-top"
+                    alt="article-4"
+                  />
+                </div>
+                <div class="card-body px-0">
+                  <small class="text-uppercase fw-bold article-small">ACARA</small>
+                  <h5 class="card-title mt-2">
+                    Dorm Care Safety & <br />
+                    Facility Check Day
+                  </h5>
+                  <p class="card-text text-muted">
+                    Dorm Care Safety & Facility Check Day adalah event khusus dari Dorm Care yang
+                    berfokus pada...
+                  </p>
+                  <a
+                    href="dorm-care-safety-and-facility-check-day.html"
+                    class="text-decoration-none fw-bold text-primary read-more-link"
+                    >Baca Selengkapnya <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card h-100 border-0">
+                <div class="image-wrapper rounded-3">
+                  <img
+                    src="assets/images/article/article-5.jpg"
+                    class="card-img-top"
+                    alt="article-1"
+                  />
+                </div>
+                <div class="card-body px-0">
+                  <small class="text-uppercase fw-bold article-small">ACARA</small>
+                  <h5 class="card-title mt-2">Dorm Care Clean & Care Week</h5>
+                  <p class="card-text text-muted">
+                    Dorm Care Clean & Care Week adalah event mingguan atau special campaign dari
+                    Dorm Care yang berfokus pada kebersihan dan pengecekan...
+                  </p>
+                  <a
+                    href="dorm-care-clean-and-care-week.html"
+                    class="text-decoration-none fw-bold text-primary read-more-link"
+                    >Baca Selengkapnya <i class="ri-arrow-right-up-line"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
+    <section id="jadwalkan-demo">
+      <section class="demo-section container">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <!-- Left Content -->
+            <div class="col-lg-6">
+              <h1 class="title heading">Yuk Coba Dorm Care!</h1>
+
+              <div class="benefit-item">
+                <div class="check-icon">
+                  <i class="ri-checkbox-circle-fill"></i>
+                </div>
+                <div>
+                  Pantau kondisi asrama secara real-time melalui dashboard eksekutif yang
+                  terintegrasi dan efisien.
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="check-icon">
+                  <i class="ri-checkbox-circle-fill"></i>
+                </div>
+                <div>
+                  Optimalkan manajemen kebersihan dan pemeliharaan fasilitas dengan sistem
+                  penjadwalan yang terstruktur.
+                </div>
+              </div>
+
+              <div class="benefit-item">
+                <div class="check-icon">
+                  <i class="ri-checkbox-circle-fill"></i>
+                </div>
+                <div>
+                  Kelola data penghuni dan staf lebih mudah dalam satu platform untuk operasional
+                  yang lebih transparan.
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Form -->
+            <div class="col-lg-6">
+              <div class="right-form">
+                <form>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Nama Lengkap" />
+                  </div>
+
+                  <div class="mb-3">
+                    <input type="tel" class="form-control" placeholder="Nomor Handphone" />
+                  </div>
+
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email" />
+                  </div>
+
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Nama kampus/bisnis" />
+                  </div>
+
+                  <div class="row mb-3">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <select class="form-select">
+                        <option selected disabled>Provinsi</option>
+                        <option>DKI Jakarta</option>
+                        <option>Jawa Barat</option>
+                        <option>Jawa Tengah</option>
+                        <option>Jawa Timur</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <select class="form-select">
+                        <option selected disabled>Kota</option>
+                        <option>Jakarta Pusat</option>
+                        <option>Jakarta Selatan</option>
+                        <option>Jakarta Barat</option>
+                        <option>Jakarta Timur</option>
+                        <option>Jakarta Utara</option>
+                        <option>Bandung</option>
+                        <option>Bekasi</option>
+                        <option>Bogor</option>
+                        <option>Depok</option>
+                        <option>Tangerang</option>
+                        <option>Surabaya</option>
+                        <option>Semarang</option>
+                        <option>Yogyakarta</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <select class="form-select">
+                      <option selected disabled>Sumber Informasi</option>
+                      <option>Instagram</option>
+                      <option>Google</option>
+                      <option>Teman</option>
+                      <option>Event</option>
+                    </select>
+                  </div>
+
+                  <button type="submit" class="btn w-100 fw-bold">Jadwalkan Demo</button>
+
+                  <p class="agreement-text fw-semibold">
+                    Dengan mengajukan permintaan demo, Anda setuju untuk menerima pesan teks
+                    otomatis dari Dorm Care.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="faq">
+      <section class="faq-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <div class="faq-title text-center pb-3">
+                <h1 class="heading">FAQ</h1>
+              </div>
+            </div>
+            <div class="col-md-6 offset-md-3">
+              <div class="faq" id="accordion">
+                <div class="card-faq">
+                  <div class="card-header" id="faqHeading-1">
+                    <div class="mb-0">
+                      <h5
+                        class="faq-title"
+                        data-toggle="collapse"
+                        data-target="#faqCollapse-1"
+                        data-aria-expanded="true"
+                        data-aria-controls="faqCollapse-1"
+                      >
+                        <span class="badge">1</span>
+                        <span class="faq-text">Apa itu Dorm Care?</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div
+                    id="faqCollapse-1"
+                    class="collapse"
+                    aria-labelledby="faqHeading-1"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body-faq">
+                      <p>
+                        <a href="#" class="fw-semibold article-inline-link">Dorm Care</a> adalah
+                        sistem manajemen asrama berbasis dashboard yang dirancang untuk membantu
+                        admin dalam mengelola kebersihan kamar, pemeliharaan fasilitas, penempatan
+                        penghuni, serta monitoring kondisi kamar secara lebih terstruktur, efisien,
+                        dan terintegrasi. Sistem ini berfokus pada kebutuhan operasional internal
+                        asrama agar setiap proses dapat dipantau dengan lebih mudah.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-faq">
+                  <div class="card-header" id="faqHeading-2">
+                    <div class="mb-0">
+                      <h5
+                        class="faq-title"
+                        data-toggle="collapse"
+                        data-target="#faqCollapse-2"
+                        data-aria-expanded="false"
+                        data-aria-controls="faqCollapse-2"
+                      >
+                        <span class="badge">2</span>
+                        <span class="faq-text">Apa saja fitur Dorm Care?</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div
+                    id="faqCollapse-2"
+                    class="collapse"
+                    aria-labelledby="faqHeading-2"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body-faq">
+                      <p>
+                        Dorm Care dilengkapi dengan berbagai fitur utama untuk mendukung operasional
+                        asrama secara lebih terstruktur, antara lain
+                        <span class="fw-semibold"
+                          >dashboard eksekutif dengan ringkasan Key Performance Indicator (KPI),
+                          manajemen data penghuni, manajemen data petugas dan admin, manajemen serta
+                          monitoring status kamar, penempatan kamar, penjadwalan dan monitoring
+                          kebersihan, pengelolaan keluhan kamar, pemeliharaan dan tindak lanjut
+                          perbaikan, manajemen dan pemeriksaan fasilitas kamar,</span
+                        >
+                        serta
+                        <span class="fw-semibold">laporan dan insights operasional.</span> Sistem
+                        ini juga mendukung
+                        <span class="fw-semibold">notifikasi prioritas</span> serta
+                        <span class="fw-semibold">pencarian dan filter data</span> agar proses
+                        monitoring dan pengelolaan asrama menjadi lebih cepat dan efisien.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-faq">
+                  <div class="card-header" id="faqHeading-3">
+                    <div class="mb-0">
+                      <h5
+                        class="faq-title"
+                        data-toggle="collapse"
+                        data-target="#faqCollapse-3"
+                        data-aria-expanded="false"
+                        data-aria-controls="faqCollapse-3"
+                      >
+                        <span class="badge">3</span>
+                        <span class="faq-text">Bagaimana cara menggunakan Dorm Care?</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div
+                    id="faqCollapse-3"
+                    class="collapse"
+                    aria-labelledby="faqHeading-3"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body-faq">
+                      <p>Cukup dengan 3 langkah mudah ini untuk memulai:</p>
+                      <ol>
+                        <li>
+                          <span class="fw-semibold">Akses website Dorm Care</span> melalui browser
+                          pada perangkat Anda.
+                        </li>
+                        <li>
+                          <span class="fw-semibold">Login ke dashboard admin</span> menggunakan akun
+                          yang telah terdaftar.
+                        </li>
+                        <li>
+                          <span class="fw-semibold">Kelola operasional asrama</span> mulai dari data
+                          penghuni, kamar, penjadwalan pembersihan, keluhan, hingga pemeliharaan
+                          fasilitas.
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-faq">
+                  <div class="card-header" id="faqHeading-4">
+                    <div class="mb-0">
+                      <h5
+                        class="faq-title"
+                        data-toggle="collapse"
+                        data-target="#faqCollapse-4"
+                        data-aria-expanded="false"
+                        data-aria-controls="faqCollapse-4"
+                      >
+                        <span class="badge">4</span>
+                        <span class="faq-text">Berapa biaya berlangganan Dorm Care?</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div
+                    id="faqCollapse-4"
+                    class="collapse"
+                    aria-labelledby="faqHeading-4"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body-faq">
+                      <p>
+                        Biaya berlangganan Dorm Care mulai dari
+                        <span class="fw-semibold">Rp299.000/bulan</span>, sesuai dengan kebutuhan
+                        dan skala operasional asrama Anda.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-faq">
+                  <div class="card-header" id="faqHeading-5">
+                    <div class="mb-0">
+                      <h5
+                        class="faq-title"
+                        data-toggle="collapse"
+                        data-target="#faqCollapse-5"
+                        data-aria-expanded="false"
+                        data-aria-controls="faqCollapse-5"
+                      >
+                        <span class="badge">5</span>
+                        <span class="faq-text">Bagaimana cara mendaftar Dorm Care?</span>
+                      </h5>
+                    </div>
+                  </div>
+                  <div
+                    id="faqCollapse-5"
+                    class="collapse"
+                    aria-labelledby="faqHeading-5"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body-faq">
+                      <p>Mulai kelola asrama Anda dengan Dorm Care sekarang.</p>
+                      <ol>
+                        <li>
+                          <a
+                            href="#jadwalkan-demo"
+                            target="_blank"
+                            class="fw-semibold article-inline-link"
+                            >Jadwalkan Demo</a
+                          >
+                          melalui website kami.
+                        </li>
+                        <li>
+                          Hubungi kami melalui
+                          <a
+                            href="https://wa.me/08111198759"
+                            target="_blank"
+                            class="fw-semibold article-inline-link"
+                            >WhatsApp</a
+                          >
+                          untuk kebutuhan dan pertanyaan Anda.
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer-card">
+      <img src="assets/images/footer-decor.png" alt="Decoration" class="footer-decoration" />
+
+      <div class="container">
+        <div class="row footer-top align-items-start">
+          <!-- Logo Area -->
+          <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+            <a href="#" class="footer-logo">
+              <img src="assets/images/dormcare-logo.png" alt="Dorm Care Logo" />
+            </a>
+          </div>
+
+          <!-- Menu -->
+          <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+            <h6 class="footer-title">Menu</h6>
+            <ul class="footer-links">
+              <li><a href="#">Beranda</a></li>
+              <li><a href="#fitur">Fitur</a></li>
+              <li><a href="#klien">Klien</a></li>
+              <li><a href="#artikel">Artikel</a></li>
+            </ul>
+          </div>
+
+          <!-- Informasi -->
+          <div class="col-lg-3 col-md-6 col-6 mb-4 mb-lg-0">
+            <h6 class="footer-title">Informasi</h6>
+            <ul class="footer-links">
+              <li><a href="#jadwalkan-demo">Jadwalkan Demo</a></li>
+              <li><a href="design-system.html" target="_blank">Design System</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="article-1.html">Tim Kami</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 <a href="#" class="copyright">Dorm Care</a>. Hak cipta dilindungi.</p>
+
+          <div class="footer-social-icons">
+            <a href="#" aria-label="Instagram">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="#" aria-label="Email">
+              <i class="ri-mail-fill"></i>
+            </a>
+            <a href="https://wa.me/08111198759" aria-label="WhatsApp">
+              <i class="ri-whatsapp-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+      window.addEventListener('scroll', function () {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('sticky', window.scrollY > 0);
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      new Typed('#typing', {
+        strings: ['“Bersih Terjaga, Jadwal Tertata.”'],
+        typeSpeed: 60,
+        backSpeed: 20,
+        loop: true,
+        cursorChar: '',
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.newsSwiper', {
+        slidesPerView: 3, // Menampilkan 3 kartu sekaligus
+        spaceBetween: 30, // Jarak antar kartu
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        // Tambahkan ini agar lebih responsif
+        breakpoints: {
+          0: { slidesPerView: 1, spaceBetween: 20 },
+          768: { slidesPerView: 2, spaceBetween: 20 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+        },
+      });
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

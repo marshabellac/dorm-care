@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dorm Care | Design System</title>
+
+    <meta
+      name="description"
+      content="Design System Dorm Care - dokumentasi warna, typography, button, component, dan visual style."
+    />
+    <meta name="author" content="Angelina, Cindi, Marshabella, Nicole, Oliver" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon_io/favicon-16x16.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/design-system.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <a href="index.html" class="top-back-link">
+          <i class="ri-arrow-left-line"></i>
+          Back to Website
+        </a>
+
+        <a href="index.html" class="logo">Dorm Care</a>
+        <p class="subtitle">Design System Documentation</p>
+
+        <nav class="nav">
+          <a href="#colors" class="active">Color Palette</a>
+          <a href="#typography">Typography</a>
+          <a href="#buttons">Button Style</a>
+          <a href="#cards">Card / Component Style</a>
+          <a href="#visuals">Icon / Visual Style</a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <!-- COLOR PALETTE -->
+        <section id="colors" class="section">
+          <span class="label">FOUNDATION</span>
+          <h1>Color Palette</h1>
+          <p class="section-desc">
+            Dorm Care menggunakan kombinasi warna hijau, mint, kuning, dan off-white untuk membangun
+            tampilan yang bersih, ramah, segar, dan terpercaya.
+          </p>
+
+          <div class="panel">
+            <div class="color-grid four-col">
+              <div class="swatch">
+                <div class="color-box" style="background: #1f6b4f"></div>
+                <div class="color-info">
+                  <h4>Primary Green</h4>
+                  <p>#1F6B4F</p>
+                  <span>Digunakan untuk heading, footer, active state, dan elemen utama.</span>
+                </div>
+              </div>
+
+              <div class="swatch">
+                <div class="color-box" style="background: #8fd9b6"></div>
+                <div class="color-info">
+                  <h4>Secondary Mint</h4>
+                  <p>#8FD9B6</p>
+                  <span>Digunakan untuk feature circle, elemen pendukung, dan hover lembut.</span>
+                </div>
+              </div>
+
+              <div class="swatch">
+                <div class="color-box" style="background: #ffd555"></div>
+                <div class="color-info">
+                  <h4>Accent Yellow</h4>
+                  <p>#FFD555</p>
+                  <span>Digunakan untuk highlight, CTA, badge, dan aksen visual.</span>
+                </div>
+              </div>
+
+              <div class="swatch">
+                <div class="color-box light-box" style="background: #f8faf7"></div>
+                <div class="color-info">
+                  <h4>Soft White</h4>
+                  <p>#F8FAF7</p>
+                  <span>Digunakan untuk background ringan, panel, dan area dokumentasi.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TYPOGRAPHY -->
+        <section id="typography" class="section">
+          <span class="label">FOUNDATION</span>
+          <h1>Typography</h1>
+          <p class="section-desc">
+            Typography Dorm Care memadukan font Darumadrop One untuk heading utama dan Poppins untuk
+            isi teks agar tampilan tetap menarik dan mudah dibaca.
+          </p>
+
+          <div class="panel">
+            <div class="type-item">
+              <div class="sample sample-h1">Solusi Cerdas, Asrama Berkelas.</div>
+              <div class="meta">Heading 1 — Darumadrop One — 54px</div>
+            </div>
+
+            <div class="type-item">
+              <div class="sample sample-h2">Manajemen Asrama Terintegrasi</div>
+              <div class="meta">Heading 2 — Darumadrop One — 42px</div>
+            </div>
+
+            <div class="type-item">
+              <div class="sample sample-h3">Fitur Kami</div>
+              <div class="meta">Heading 3 — Darumadrop One — 28px</div>
+            </div>
+
+            <div class="type-item">
+              <div class="sample body-large">
+                Body Large — Pantau kondisi asrama secara real-time melalui dashboard yang efisien.
+              </div>
+              <div class="meta">Body Large — Poppins Medium — 18px</div>
+            </div>
+
+            <div class="type-item">
+              <div class="sample body-regular">
+                Body Regular — Dorm Care membantu pengelolaan kebersihan, pemeliharaan, penjadwalan,
+                dan keluhan asrama secara lebih terstruktur.
+              </div>
+              <div class="meta">Body Regular — Poppins Regular — 16px</div>
+            </div>
+
+            <div class="type-item">
+              <div class="sample caption">Caption — April 2026 • Tim Dorm Care</div>
+              <div class="meta">Caption — Poppins Regular — 14px</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- BUTTON STYLE -->
+        <section id="buttons" class="section">
+          <span class="label">COMPONENT</span>
+          <h1>Button Style</h1>
+          <p class="section-desc">
+            Style button Dorm Care mengikuti implementasi pada halaman index, dengan bentuk
+            rounded-pill dan interaksi hover yang konsisten tanpa efek naik.
+          </p>
+
+          <div class="panel">
+            <div class="button-grid">
+              <div class="button-preview-card">
+                <p>Primary Button</p>
+                <button class="ds-btn ds-btn-primary">Jadwalkan Demo</button>
+              </div>
+
+              <div class="button-preview-card">
+                <p>Yellow Button</p>
+                <button class="ds-btn ds-btn-yellow">Coba Gratis</button>
+              </div>
+
+              <div class="button-preview-card">
+                <p>Outline Button</p>
+                <button class="ds-btn ds-btn-outline">
+                  <i class="ri-whatsapp-line"></i>
+                  Hubungi Tim
+                </button>
+              </div>
+
+              <div class="button-preview-card">
+                <p>Disabled Button</p>
+                <button class="ds-btn ds-btn-primary" disabled>Disabled</button>
+              </div>
+            </div>
+
+            <div class="spec-box">
+              <strong>Button Specs</strong><br />
+              Font: Poppins SemiBold<br />
+              Border Radius: 999px<br />
+              Padding: 12px 28px<br />
+              Transition: 0.3s ease<br />
+              Hover: follows index.html button style<br />
+              Primary Hover: green background + yellow text<br />
+              Hover Motion: no translate / no lift effect
+            </div>
+          </div>
+        </section>
+
+        <!-- CARD / COMPONENT STYLE -->
+        <section id="cards" class="section">
+          <span class="label">COMPONENT</span>
+          <h1>Card / Component Style</h1>
+          <p class="section-desc">
+            Komponen Dorm Care menggunakan sudut membulat, shadow lembut, dan layout yang rapi agar
+            konsisten di seluruh halaman website.
+          </p>
+
+          <div class="panel">
+            <div class="card-grid">
+              <div class="article-card">
+                <div class="component-image-wrapper">
+                  <img src="assets/images/article/article-1.png" alt="Article Preview" />
+                </div>
+                <small>BERITA</small>
+                <h3 class="article-card-title">Behind the Scenes: Tim di Balik Dorm Care</h3>
+                <p>
+                  Di balik tampilan Dorm Care yang sederhana namun fungsional, terdapat kerja sama
+                  dari tim yang membangunnya.
+                </p>
+                <a href="article-1.html" class="component-link">
+                  Baca Selengkapnya <i class="ri-arrow-right-up-line"></i>
+                </a>
+              </div>
+
+              <div class="feature-card-preview">
+                <div class="feature-circle">
+                  <img src="assets/images/fitur/fitur-jadwal.png" alt="Penjadwalan Pembersihan" />
+                </div>
+                <h3 class="feature-card-title">Penjadwalan Pembersihan</h3>
+              </div>
+
+              <div class="article-content-box">
+                <div class="article-content-inner">
+                  <h3>Dorm Care sebagai Solusi</h3>
+                  <p>
+                    Dorm Care dirancang untuk membantu pengelolaan kebersihan, pemeliharaan,
+                    penjadwalan, dan laporan asrama secara lebih terstruktur.
+                  </p>
+                  <a href="index.html" class="article-inline-link">Dorm Care</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="component-extra-grid">
+              <div class="mini-component">
+                <a href="index.html#artikel" class="article-back-link">
+                  <i class="ri-arrow-left-line"></i>
+                  Kembali ke Artikel
+                </a>
+              </div>
+
+              <div class="mini-component">
+                <p class="meta-preview">
+                  <i class="ri-calendar-line"></i> April 2026
+                  <span class="dot">•</span>
+                  <i class="ri-user-3-line"></i> Tim Dorm Care
+                </p>
+              </div>
+
+              <div class="mini-component">
+                <span class="article-badge-preview">BERITA</span>
+              </div>
+            </div>
+
+            <div class="spec-box">
+              <strong>Component Specs</strong><br />
+              Border Radius: 20px - 30px<br />
+              Card Background: #FFFFFF / #FBFCFB<br />
+              Shadow: soft shadow<br />
+              Feature Circle: #8FD9B6<br />
+              Inline Link Accent: #FFD555<br />
+              Component Hover: translateY(-6px)
+            </div>
+          </div>
+        </section>
+
+        <!-- ICON / VISUAL STYLE -->
+        <section id="visuals" class="section">
+          <span class="label">VISUAL LANGUAGE</span>
+          <h1>Icon / Visual Style</h1>
+          <p class="section-desc">
+            Dorm Care menggunakan Remix Icon untuk icon antarmuka dan berbagai aset visual pendukung
+            berupa ilustrasi, banner, map, dekorasi, feature image, serta logo kampus pada client
+            slider. Bagian ini menampilkan visual website selain logo utama dan article image.
+          </p>
+
+          <div class="panel">
+            <h3>Interface Icons</h3>
+
+            <div class="app-icon-grid">
+              <div class="app-icon-card">
+                <i class="ri-whatsapp-line"></i>
+                <p>WhatsApp</p>
+              </div>
+
+              <div class="app-icon-card">
+                <i class="ri-arrow-right-up-line"></i>
+                <p>Arrow Up Right</p>
+              </div>
+
+              <div class="app-icon-card">
+                <i class="ri-arrow-left-line"></i>
+                <p>Back Arrow</p>
+              </div>
+
+              <div class="app-icon-card">
+                <i class="ri-calendar-line"></i>
+                <p>Calendar</p>
+              </div>
+
+              <div class="app-icon-card">
+                <i class="ri-user-3-line"></i>
+                <p>User</p>
+              </div>
+
+              <div class="app-icon-card">
+                <i class="ri-instagram-fill"></i>
+                <p>Instagram</p>
+              </div>
+
+              <div class="app-icon-card">
+                <i class="ri-mail-fill"></i>
+                <p>Email</p>
+              </div>
+
+              <div class="app-icon-card">
+                <i class="ri-checkbox-circle-fill"></i>
+                <p>Checklist</p>
+              </div>
+            </div>
+
+            <h3 class="visual-heading">Supporting Visual Images</h3>
+
+            <div class="visual-grid">
+              <div class="visual-card">
+                <img src="assets/images/carousel/carousel-1.png" alt="Carousel 1" />
+                <p>Carousel 1</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/carousel/carousel-2.png" alt="Carousel 2" />
+                <p>Carousel 2</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/carousel/carousel-3.png" alt="Carousel 3" />
+                <p>Carousel 3</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/slogan.png" alt="Slogan Banner" />
+                <p>Slogan Banner</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/map.png" alt="Coverage Map" />
+                <p>Coverage Map</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/footer-decor.png" alt="Footer Decoration" />
+                <p>Footer Decoration</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/fitur/fitur-penghuni.png" alt="Fitur Penghuni" />
+                <p>Manajemen Data Penghuni</p>
+              </div>
+
+              <div class="visual-card">
+                <img
+                  src="assets/images/fitur/fitur-petugas-admin.png"
+                  alt="Fitur Petugas dan Admin"
+                />
+                <p>Manajemen Petugas & Admin</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/fitur/fitur-kamar.png" alt="Fitur Kamar" />
+                <p>Manajemen Kamar</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/fitur/fitur-fasilitas.png" alt="Fitur Fasilitas" />
+                <p>Pemeriksaan Fasilitas</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/fitur/fitur-penempatan.png" alt="Fitur Penempatan" />
+                <p>Manajemen Penempatan</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/fitur/fitur-jadwal.png" alt="Fitur Jadwal" />
+                <p>Penjadwalan Pembersihan</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/fitur/fitur-monitoring.png" alt="Fitur Monitoring" />
+                <p>Monitoring Aktivitas</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/fitur/fitur-keluhan.png" alt="Fitur Keluhan" />
+                <p>Pengelolaan Keluhan</p>
+              </div>
+
+              <div class="visual-card">
+                <img src="assets/images/fitur/fitur-pemeliharaan.png" alt="Fitur Pemeliharaan" />
+                <p>Manajemen Pemeliharaan</p>
+              </div>
+            </div>
+
+            <h3 class="visual-heading">Client Slider Logos</h3>
+
+            <div class="logo-grid">
+              <div class="logo-card">
+                <img src="assets/images/clients/unpad logo.png" alt="UNPAD" />
+                <p>UNPAD</p>
+              </div>
+
+              <div class="logo-card">
+                <img src="assets/images/clients/itb logo.png" alt="ITB" />
+                <p>ITB</p>
+              </div>
+
+              <div class="logo-card">
+                <img src="assets/images/clients/uph logo.png" alt="UPH" />
+                <p>UPH</p>
+              </div>
+
+              <div class="logo-card">
+                <img src="assets/images/clients/ui logo.png" alt="UI" />
+                <p>UI</p>
+              </div>
+
+              <div class="logo-card">
+                <img src="assets/images/clients/umn logo.png" alt="UMN" />
+                <p>UMN</p>
+              </div>
+
+              <div class="logo-card">
+                <img src="assets/images/clients/ugm logo.png" alt="UGM" />
+                <p>UGM</p>
+              </div>
+
+              <div class="logo-card">
+                <img src="assets/images/clients/pu logo.png" alt="President University" />
+                <p>President University</p>
+              </div>
+
+              <div class="logo-card">
+                <img src="assets/images/clients/unair logo.png" alt="UNAIR" />
+                <p>UNAIR</p>
+              </div>
+
+              <div class="logo-card">
+                <img src="assets/images/clients/ub logo.png" alt="UB" />
+                <p>Universitas Brawijaya</p>
+              </div>
+            </div>
+
+            <div class="spec-box">
+              <strong>Visual Specs</strong><br />
+              Icon Library: Remix Icon<br />
+              Dominant Icon Color: #1F6B4F<br />
+              Supporting Image Style: clean, friendly, and modern<br />
+              Feature Circle Background: #8FD9B6<br />
+              Client Logos: displayed in slider as trust-building visual elements
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const sections = document.querySelectorAll('.section');
+      const navLinks = document.querySelectorAll('.nav a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 180;
+
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove('active');
+
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
